@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/styles/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>SIMULE SUAS VENDAS</h1>
+    </header>
+    <main>
+        <section id="secInput">
+            <div>
+                <h3 class="titleInput">Selecione seu plano</h3>
+                <select>
+                    <option value="d1">D + 1</option>
+                    <option value="d0">D0</option>
+                </select>
+            </div>
+            <div>
+                <h3 class="titleInput">Selecione a Bandeira</h3>
+                <select>
+                    <option value="visa">Visa / Mastercard</option>
+                    <option value="elo">Elo / Hipercard / Amex / Diners Club / Outros</option>
+                </select>
+            </div>
+            <div>
+                <h3 class="titleInput">Como você quer cobrar?</h3>
+                <select>
+                    <option value="vendedor">Custo Vendedor</option>
+                    <option value="comprador">Custo comprador</option>
+                </select>
+            </div>
+            <div>
+                <h3 class="titleInput">Qual valor quer receber?</h3>
+                <input type="number" oninput="setValue()" id="numberInput">
+            </div>
+            <div>
+                <h3 class="titleInput">Quer aplicar retorno Financeiro <span>(R)</span></h3>
+                <p>(indicador para revenda de veiculos e despachantes)</p>
+                <p>obs> aplicando <span>R</span> o valor sinal da venda aumenta e quem arca com os juros é o cobrador</p>
+                <select>
+                    <option value="r0">R0</option>
+                    <option value="r2">R2</option>
+                    <option value="r4">R4</option>
+                    <option value="r6">R6</option>
+                    <option value="r8">R8</option>
+                    <option value="r10">R10</option>
+                </select>
+            </div>
+            <div>
+                <h3>Quantas Vezes?</h3>
+                <select id="parcelas" onchange="setParcelas()">
+                    <option value="1">1X</option>
+                    <option value="2">2X</option>
+                    <option value="3">3X</option>
+                    <option value="4">4X</option>
+                    <option value="5">5X</option>
+                    <option value="6">6X</option>
+                    <option value="7">7X</option>
+                    <option value="8">8X</option>
+                    <option value="9">9X</option>
+                    <option value="10">10X</option>
+                    <option value="11">11X</option>
+                    <option value="12">12X</option>
+                    <option value="13">13X</option>
+                    <option value="14">14X</option>
+                    <option value="15">15X</option>
+                    <option value="16">16X</option>
+                    <option value="17">17X</option>
+                    <option value="18">18X</option>
+                </select>
+            </div>
+        </section>
+        <section id="secValue">
+            <div>
+                <h3>com a lucra+ comprador vai pagar:</h3>
+                <h2 id="titleLucra">R$00,0</h2>
+                <span>valor com taxa lucra+</span>
+            </div>
+            <div>
+                <h3>com a lucra+ vendedor vai receber:</h3>
+                <h2 id="titleBase">R$00,0</h2>
+                <span>valor com taxa lucra+</span>
+            </div>
+            <div>
+                <h3>com taxa média do mercado:</h3>
+                <h2 id="titleNormal">R$00,0</h2>
+                <span>valor com os concorrentes</span>
+            </div>
+        </section>
+        <section id="secResult">
+            <p>Com sua maquininha seu cliente <span>paga menos e você <span>lucra+</span></span></p>
+            <h2 id="titleGanho">- R$ 00,00</h2>
+            <h3>TAXA MENOR = CLIENTE SATISFEITO</h3>
+            <p>ESSA É A DIFERENÇA ENTRE TRABALHAR COM A <span>LUCRA+</span> E AS OUTRAS MÁQUINAS DO MERCADO.</p>
+            <a href="https://wa.me/5551998116453?text=Um%20exemplo%20de%20texto%20que%20poderia%20vir%20aqui">
+                <h3>LUCRA MAIS AGORA</h3>
+                <span>click aqui</span>
+            </a>
+        </section>
+    </main>
+    <script src="./src/script/script.js"></script>
+</body>
+</html>

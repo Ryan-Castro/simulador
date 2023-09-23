@@ -1,0 +1,154 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+header{
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 5px solid yellow;
+}
+main{
+    display: flex;
+    justify-content: space-evenly;
+}
+main>section{
+    width: 25%;
+    padding-top: 20px;
+}
+#secInput{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#secInput select{
+    width: 80%;
+    border: 2px solid rgb(255, 217, 0);
+    border-radius: 5px;
+    height: 30px;
+    padding-left: 10px;
+}
+#secInput .titleInput{
+    font-size: 20px;
+    font-weight: 400;
+}
+#secInput p{
+    font-size: 12px;
+}
+#secInput input{
+    width: 80%;
+    border: 2px solid rgb(255, 217, 0);
+    border-radius: 5px;
+    height: 30px;
+    padding-left: 10px;
+}
+
+#secValue{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#secValue>div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#secValue>div span{
+    background-image: linear-gradient(to right, rgb(255, 208, 0), orange);
+    width: 80%;
+    height: 30px;
+    border-radius: 30px;
+    color: white;
+    font-size: 20px;
+    text-shadow: 0px 0px 2px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#secResult{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#secResult p{
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+#secResult h2{
+    color: greenyellow;
+    text-shadow: 0px 0px 1px black;
+    font-size: 50px;
+
+}
+#secResult h3{
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    margin-top: -5px;
+}
+#secResult a{
+    color: white;
+    text-shadow: 0px 0px 1px black;
+    background-image: linear-gradient(to right, rgb(255, 208, 0), orange);
+    padding: 20px 50px;
+    border-radius: 50px;
+    text-decoration: none;
+}
+#secResult a h3{
+    margin-bottom: 0px;
+    font-size: 21px;
+}
+
+@media (max-width:1250px) {
+    #secResult a h3{
+        font-size: 18px;
+    }
+    #secValue>div span{
+        width: 100%;
+    }
+}
+@media (max-width:1250px) {
+    #secResult a{
+        padding: 20px 30px;
+    }
+    #secValue>div span{
+       font-size: 18px;
+    }
+}
+@media (max-width:950px) {
+    main>section{
+        width: 30%;
+    }
+}
+@media (max-width:800px) {
+    main{
+        flex-direction: column;
+    }
+    main>section{
+        width: 90%;
+        margin-left: 30px;
+    }
+    #secResult{
+        margin-bottom: 50px;
+    }
+}
+@media (max-width:600px) {
+    main{
+        justify-content: center;
+    }
+    #secInput select, #secInput input{
+        width: 100%;
+    }
+}
+@media (max-width:400px) {
+    header{
+        font-size: 26px;
+    }
+}
